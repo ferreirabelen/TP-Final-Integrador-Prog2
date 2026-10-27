@@ -8,10 +8,10 @@ class Empleado():
     def establecer_id(self, id):
         self.__id = id
 
-    def obtener_nombres(self, nombres):
+    def establecer_nombres(self, nombres):
         self.__nombres = nombres
 
-    def obtener_apellidos(self, apellidos):
+    def establecer_apellidos(self, apellidos):
         self.__apellidos = apellidos
 
     def obtener_id(self):

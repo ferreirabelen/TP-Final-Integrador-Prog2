@@ -25,3 +25,17 @@ class Animal(abc.ABC):
 
     def obtener_id_cuidador_principal(self):
         return self.__id_cuidador_principal
+
+    def __eq__(self, otro):
+        
+        if not isinstance(otro, Animal):
+            return False
+
+        return self.obtener_id() == otro.obtener_id()
+    
+
+    @abc.abstractmethod
+    def __str__(self):
+        pass
+
+

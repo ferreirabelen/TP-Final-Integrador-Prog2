@@ -16,7 +16,7 @@ class Aguila(animal.Animal):
     def obtener_largo_alas(self):
         return self.__largo_alas
 
-    def establecer_largo_pico(self):
+    def obtener_largo_pico(self):
         return self.__largo_pico
 
     
