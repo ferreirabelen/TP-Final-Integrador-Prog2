@@ -11,4 +11,10 @@ class Rinoceronte(animal.Animal):
     def obtener_largo_cuerno(self):
         return self.__largo_cuerno
 
-    
+    def __str__(self):
+        return (
+            f"ID: {self.obtener_id()}, "
+            f"Nombre: {self.obtener_nombre()}, "
+            f"ID cuidador principal: {self.obtener_id_cuidador_principal()}, "
+            f"Largo cuerno: {self.obtener_largo_cuerno()}"
+        )

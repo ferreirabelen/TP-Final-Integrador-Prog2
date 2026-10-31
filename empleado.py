@@ -1,4 +1,4 @@
-class Empleado():
+class Empleado:
 
     def __init__(self, id, nombres, apellidos):
         self.__id = id
@@ -23,4 +23,16 @@ class Empleado():
     def obtener_apellidos(self):
         return self.__apellidos
 
+    def __eq__(self, otro):
+        if not isinstance(otro, Empleado):
+            return False
+
+        return self.obtener_id() == otro.obtener_id()
+
+    def __str__(self):
+        return (
+            f"ID: {self.obtener_id()}, "
+            f"Nombres: {self.obtener_nombres()}, "
+            f"Apellidos: {self.obtener_apellidos()}"
+        )
     

@@ -19,4 +19,11 @@ class Aguila(animal.Animal):
     def obtener_largo_pico(self):
         return self.__largo_pico
 
-    
+    def __str__(self):
+        return (
+            f"ID: {self.obtener_id()}, "
+            f"Nombre: {self.obtener_nombre()}, "
+            f"ID cuidador principal: {self.obtener_id_cuidador_principal()}, "
+            f"Largo alas: {self.obtener_largo_alas()}, "
+            f"Largo pico: {self.obtener_largo_pico()}"
+        )

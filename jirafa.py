@@ -19,5 +19,5 @@ class Jirafa(animal.Animal):
             f"ID: {self.obtener_id()}, "
             f"Nombre: {self.obtener_nombre()}, "
             f"ID cuidador principal: {self.obtener_id_cuidador_principal()}, "
-            f"Largo cuello: {self.obtener_largo_cuello()}, "
+            f"Largo cuello: {self.obtener_largo_cuello()}"
         )
